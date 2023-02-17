@@ -12,7 +12,7 @@ const app = (
   </HelmetProvider>
 );
 
-ReactDOM.hydrate(
+ReactDOM.render(
   app,
   document.getElementById("root")
 );
