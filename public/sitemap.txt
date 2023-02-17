@@ -1,0 +1,3 @@
+https://stellular-haupia-47fdcb.netlify.app
+https://stellular-haupia-47fdcb.netlify.app/product/id/name
+https://stellular-haupia-47fdcb.netlify.app/product/:id/:name

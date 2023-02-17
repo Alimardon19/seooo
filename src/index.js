@@ -1,13 +1,18 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-import ReactDom from "react-dom/client";
-import {BrowserRouter} from 'react-router-dom';
-import './index.css';
 
+const app = (
+  <HelmetProvider>
+    <BrowserRouter>
+        <App/>
+      </BrowserRouter> 
+  </HelmetProvider>
+);
 
-const rootElement = ReactDom.createRoot(document.getElementById("root"));
-rootElement.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-)
+ReactDOM.hydrate(
+  app,
+  document.getElementById("root")
+);
