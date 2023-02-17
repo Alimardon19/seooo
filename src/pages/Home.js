@@ -10,6 +10,8 @@ const Home = () => {
 
     const data = ['Banana', 'Apple', 'Samsung', 'Hamburgers', 'Chockolate', 'Carrot'];
 
+    const setNavigate = (path) => navigate(path);
+
     useEffect(() => {
         axios({
             method: 'get',
@@ -41,6 +43,10 @@ const Home = () => {
                 <meta name="description" content="This is home page"/>
                 <link rel='canonical' href='/' />
             </Helmet>
+            <div>
+                <h1 onClick={() => setNavigate('/about')}> About </h1>
+                <h1 onClick={() => setNavigate('/contact')}> Contact </h1>
+            </div>
             {loading ? <h5> Loading.... </h5> :
             <div>
                 <h1> Home Page</h1>
