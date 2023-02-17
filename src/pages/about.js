@@ -7,7 +7,7 @@ const About = () => {
         <div>
             <Helmet>
                 <title> About Page </title>
-
+                <link rel='canonical' href='/about'/>
             </Helmet>
             <h1> This is About Pages </h1>
         </div>

@@ -7,7 +7,7 @@ const Contact = () => {
         <div>
             <Helmet>
                 <title> Contact Page </title>
-
+                <link rel='canonical' href='/contact'/>
             </Helmet>
             <h1> This is Contact Pages </h1>
         </div>
