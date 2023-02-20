@@ -1,11 +1,14 @@
 const express = require('express');
 const app = express();
+const PORT = process.env.POST || 5000;
 
 app.use(require('prerender-node').set('prerenderToken', 'mYSkPcK7M3hCeEWyj21P'));
 
 
 
-
+app.listen(PORT, () => {
+    console.log(PORT + ': worked...')
+})
 
 
 
