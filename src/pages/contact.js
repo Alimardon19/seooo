@@ -6,8 +6,8 @@ const Contact = () => {
     return (
         <div>
             <Helmet>
-                <title> Contact Page </title>
-                <link rel='canonical' href='/contact'/>
+                <meta property="og:title" content="Contact page!!"/>
+                {/* <link rel='canonical' href='/contact'/> */}
             </Helmet>
             <h1> This is Contact Pages </h1>
         </div>

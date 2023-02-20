@@ -21,9 +21,9 @@ const Product = () => {
     return (
         <>
             <Helmet>
-                <title> Home Page </title>
-                <meta name="description" content="Product info"/>
-                <link rel='canonical' href='/product/:id/:name'/>
+                <meta property="og:title" content={name}/>
+                {/* <meta name="description" content="Product info"/>
+                <link rel='canonical' href='/product/:id/:name'/> */}
             </Helmet>
             <div>
                 <h1>

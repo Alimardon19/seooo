@@ -7,12 +7,9 @@ import App from './App';
 const app = (
   <HelmetProvider>
     <BrowserRouter>
-        <App/>
-      </BrowserRouter> 
+      <App/>
+    </BrowserRouter> 
   </HelmetProvider>
 );
 
-ReactDOM.render(
-  app,
-  document.getElementById("root")
-);
+ReactDOM.hydrate(app, document.getElementById("root"));

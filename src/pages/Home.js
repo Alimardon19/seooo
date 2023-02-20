@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {useNavigate} from 'react-router-dom';
 import axios from "axios";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
     const [state, setState] = useState([]);
@@ -39,9 +39,8 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title> Home Page </title>
-                <meta name="description" content="This is home page"/>
-                <link rel='canonical' href='/' />
+                <meta property="og:title" content="Home page!!"/>
+                {/* <link rel='canonical' href='/' /> */}
             </Helmet>
             <div>
                 <h1 onClick={() => setNavigate('/about')}> About </h1>
